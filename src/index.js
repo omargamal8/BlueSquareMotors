@@ -1,26 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar'
-import Typography from '@material-ui/core/Typography';
+import Toolbar from '@material-ui/core/Toolbar';
+import BsmLogo  from "./logo";
 
+import "./index.css"
 class BsmHeader extends React.Component{
   constructor(props){
     super(props);
 	    this.state = {
-	      componentSize: {width: "50" ,height: props.height}
+	      // componentSize: {width: "10" ,height: "1"}
 	    }
  	 }
 	render(){
 		return (
-	      <AppBar position="relative" style="{">
-	        <Toolbar>
-	          <Typography variant="h6" color="inherit">
-	            News
-	          </Typography>
-	        </Toolbar>
-	      </AppBar>
+			<div className="topbar">
+			      <Toolbar  className="toolbar">
+							<div className="text-box">
+								<p1>
+									Deals that are fair & Square !
+								</p1>
+							</div>
+			      </Toolbar>
+						<BsmLogo/>
+	      </div>
 	      )
 	}
 }
