@@ -40,5 +40,27 @@ body .menu-bar .menubar{
    position: relative; 
    background-color: #F5F6F1;
    /* min-height: 0%; */
-   height: 100vh;
+   height: 7vh;
+}
+.menu-bar .menubar .search-icon{
+  position: relative;
+  float: right;
+  color: black;
+  /* transform: translate() */
+  /* right: -100vh; */
+}
+.menu-bar .menubar .options{
+  transform: translate(0%,-50%);
+}
+.menu-bar .menubar .options .option{
+  display:inline;
+  margin: 10px;
+  text-decoration: none;
+}
+.menu-bar .menubar .options .option:hover{
+color: blue;
+}
+a{
+  text-decoration: none;
+  color: inherit;
 }

@@ -16,13 +16,17 @@ class BsmMenuBar extends React.Component{
             <div className="menu-bar">
                 <AppBar className="menubar">
                     <Toolbar>
-                        <Typography variant="h6" color="inherit" noWrap>
+                        <div className="options">
+                            <Typography className="option" variant="button"><a href="#home">Home</a></Typography>
+                            <Typography className="option" variant="button"><a href="">About us</a></Typography>
+                            <Typography className="option" variant="button"><a href="">How it works</a></Typography>
+                            <Typography className="option" variant="button"><a href="">stock</a></Typography>
+                            <Typography className="option" variant="button"><a href="">contact us</a></Typography>
+                        </div>
+                        {/* <Typography variant="h6" color="inherit" noWrap>
                         Material-UI
-                        </Typography>
-                        <SearchIcon />
-                        <InputBase
-                            placeholder="Search…"
-                        />
+                        </Typography> */}
+                            <SearchIcon className="search-icon"/>
                     </Toolbar>
                 </AppBar>
             </div>
