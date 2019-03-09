@@ -10,6 +10,8 @@ import SearchIcon from '@material-ui/icons/Search';
 class BsmMenuBar extends React.Component{
     constructor(props){
       super(props);
+      this.state = {...this.state,
+                    selected:"Home"};
         }
       render(){
           return (
@@ -17,23 +19,22 @@ class BsmMenuBar extends React.Component{
                 <AppBar className="menubar">
                     <Toolbar>
                         <div className="options">
-                            <Typography className="option" variant="button"><a href="#home">Home</a></Typography>
-                            <Typography className="option" variant="button"><a href="">About us</a></Typography>
-                            <Typography className="option" variant="button"><a href="">How it works</a></Typography>
-                            <Typography className="option" variant="button"><a href="">stock</a></Typography>
-                            <Typography className="option" variant="button"><a href="">contact us</a></Typography>
+                            {["Home", "About us", "How it works", "Stock", "Contact us"].map((name,i)=>{
+                             return <Typography className={"option option--"+name} variant="button" style={name==this.state.selected?{color:"blue"}:null}><a href="#"><center>{name}</center></a></Typography>                                
+                            })}
                         </div>
                         {/* <Typography variant="h6" color="inherit" noWrap>
                         Material-UI
                         </Typography> */}
-                            <SearchIcon className="search-icon"/>
+                        {/* <SearchIcon className="search-icon"/> */}
+                        {/* <Typography className="test" variant="button"><a href="#home">right</a></Typography>                         */}
                     </Toolbar>
                 </AppBar>
             </div>
             )
       }
-  }
 
+  }
 export default BsmMenuBar; 
 
 

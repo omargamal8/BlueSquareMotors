@@ -43,19 +43,26 @@ body .menu-bar .menubar{
    height: 7vh;
 }
 .menu-bar .menubar .search-icon{
-  position: relative;
-  float: right;
   color: black;
   /* transform: translate() */
   /* right: -100vh; */
 }
+
 .menu-bar .menubar .options{
-  transform: translate(0%,-50%);
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5,1fr) ;
+  grid-template-rows: auto;
+  grid-gap: 1px;
 }
 .menu-bar .menubar .options .option{
-  display:inline;
-  margin: 10px;
+  /* display:inline; */
+  /* position: absolute; */
+  /* margin: 20px; */
   text-decoration: none;
+  color: black;
+  transform: translate(0,-50%);
+  font-size: 12px;
 }
 .menu-bar .menubar .options .option:hover{
 color: blue;

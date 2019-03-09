@@ -22,9 +22,9 @@ class BsmHeader extends React.Component{
 					<div className="topbar">
 								<Toolbar  className="toolbar">
 									<div className="text-box">
-										<p1>
+										<p>
 											Deals that are fair & Square !
-										</p1>
+										</p>
 									</div>
 								</Toolbar>
 								<BsmLogo/>

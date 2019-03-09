@@ -22,3 +22,5 @@ RUN apt-get update && apt-get install -y \
         nodejs \
         yarn
 RUN yarn add @material-ui/core
+
+WORKDIR blue_square_motors
