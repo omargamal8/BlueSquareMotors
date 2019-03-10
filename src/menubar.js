@@ -20,7 +20,7 @@ class BsmMenuBar extends React.Component{
                     <Toolbar>
                         <div className="options">
                             {["Home", "About us", "How it works", "Stock", "Contact us"].map((name,i)=>{
-                             return <Typography className={"option option--"+name} variant="button" style={name==this.state.selected?{color:"blue"}:null}><a href="#"><center>{name}</center></a></Typography>                                
+                             return <Typography className={"option option--"+name} variant="button" style={name==this.state.selected?{color:"#0073be"}:null}><a href="#"><center>{name}</center></a></Typography>                                
                             })}
                         </div>
                         {/* <Typography variant="h6" color="inherit" noWrap>
@@ -29,6 +29,7 @@ class BsmMenuBar extends React.Component{
                         {/* <SearchIcon className="search-icon"/> */}
                         {/* <Typography className="test" variant="button"><a href="#home">right</a></Typography>                         */}
                     </Toolbar>
+                    <div className="background-img" >hello</div>
                 </AppBar>
             </div>
             )

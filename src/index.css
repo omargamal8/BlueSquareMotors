@@ -65,9 +65,18 @@ body .menu-bar .menubar{
   font-size: 12px;
 }
 .menu-bar .menubar .options .option:hover{
-color: blue;
+color: #0073be;
 }
+
 a{
   text-decoration: none;
   color: inherit;
+}
+
+.background-img{
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-image: url('./background.jpg');
+  /* background-color: red; */
 }
