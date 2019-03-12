@@ -26,8 +26,10 @@ class BsmMenuBar extends React.Component{
                         {/* <Typography variant="h6" color="inherit" noWrap>
                         Material-UI
                         </Typography> */}
-                        {/* <SearchIcon className="search-icon"/> */}
-                        {/* <Typography className="test" variant="button"><a href="#home">right</a></Typography>                         */}
+                        <div className="search">
+                            <SearchIcon className="search-icon"/>
+                            {/* <Typography className="test" variant="button"><a href="#home">right</a></Typography>                         */}
+                        </div>
                     </Toolbar>
                     <div className="background-img" >hello</div>
                 </AppBar>
