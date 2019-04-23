@@ -38,7 +38,7 @@ position: relative;
 }
 body .menu-bar{
   height:500px;
-  background-color: red;
+  /* background-color: red; */
 }
 body .menu-bar .menubar{
    position: relative; 
